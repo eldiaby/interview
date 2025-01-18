@@ -1,0 +1,54 @@
+@use './../abstracts/variables';
+
+//
+
+.header {
+  background-image: linear-gradient(
+    to left,
+    variables.$color-primary-light,
+    variables.$color-primary-dark
+  );
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -6.4rem;
+  }
+  &__image-box {
+    margin-bottom: -10%;
+  }
+
+  &__image {
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12rem;
+  }
+
+  &__heading {
+    max-width: 48rem;
+    font-size: 4.2rem;
+    font-weight: 300;
+  }
+
+  &__form {
+    // align-self: center;
+
+    input {
+      width: 75%;
+      padding: 1.6rem 3.2rem;
+      font-size: 2.4rem;
+      color: variables.$color-font-primary;
+      caret-color: variables.$color-primary;
+      border: none;
+
+      &:focus {
+        outline-color: variables.$color-primary;
+      }
+    }
+  }
+}

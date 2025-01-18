@@ -1,0 +1,18 @@
+@use '../abstracts/variables';
+
+.header__link-box {
+  display: flex;
+}
+
+.header__link {
+  font-size: 1.6rem;
+  margin-left: auto;
+  color: variables.$color-font-primary;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 1.6rem 3.2rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

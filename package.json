@@ -1,0 +1,32 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass ./sass/main.scss ./css/main.css --no-source-map --watch",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver sass:watch",
+    "sass:build": "sass sass/main.scss css/main.comp.css --no-source-map",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./css/main.comp.css -o ./css/main.prefix.css",
+    "compress:sass": "sass ./css/main.prefix.css ./css/main.css --style=compressed --no-source-map",
+    "build:css": "npm-run-all sass:build prefix:css compress:sass "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eldiaby/interview.git"
+  },
+  "author": "Eldiaby hosny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eldiaby/interview/issues"
+  },
+  "homepage": "https://github.com/eldiaby/interview#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "concat": "^1.0.3",
+    "sass": "^1.83.4",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.0"
+  }
+}
