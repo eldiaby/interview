@@ -1,12 +1,14 @@
 @use 'abstracts/functions';
 @use 'abstracts/mixins';
 @use 'abstracts/variables';
+@use 'base/animatins';
 @use 'base/reset';
 @use 'base/typography';
 @use 'base/utilities';
 @use 'base/base';
 @use 'components/buttons';
 @use 'components/header-nav';
+@use 'components/product-card';
 @use 'layout/header';
 @use 'layout/footer';
 @use 'layout/sidebar';

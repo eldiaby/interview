@@ -2,6 +2,7 @@
 
 .header__link-box {
   display: flex;
+  padding: 1.6rem 0;
 }
 
 .header__link {
@@ -10,7 +11,6 @@
   color: variables.$color-font-primary;
   text-decoration: none;
   text-transform: capitalize;
-  padding: 1.6rem 3.2rem;
 
   &:hover {
     text-decoration: underline;

@@ -1,0 +1,45 @@
+@use './../abstracts/variables';
+
+//
+
+.product-cart {
+  position: relative;
+  z-index: -1;
+  cursor: pointer;
+
+  &__image {
+    max-width: 18rem;
+
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__description {
+    color: variables.$color-font-primary-dark;
+    position: absolute;
+    bottom: 2rem;
+    font-size: 1.4rem;
+  }
+
+  &::after {
+    background-color: variables.$color-primary;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -75%;
+    left: 25%;
+    z-index: -1;
+  }
+}
+
+.product-cart__content {
+  width: 24rem;
+  height: 18rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+  position: relative;
+  z-index: 10;
+}
