@@ -37,6 +37,7 @@
 
   &__form {
     // align-self: center;
+    position: relative;
 
     input {
       width: 90%;
@@ -45,9 +46,23 @@
       color: variables.$color-font-primary;
       caret-color: variables.$color-primary;
       border: none;
+      border-radius: 0.8rem;
 
       &:focus {
         outline-color: variables.$color-primary;
+      }
+    }
+
+    .form-icon {
+      position: absolute;
+      right: 15%;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+
+      i {
+        font-size: 2.4rem;
+        color: variables.$color-primary;
       }
     }
   }
